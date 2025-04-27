@@ -1,0 +1,21 @@
+{
+  "request": {
+    "url": "https://api.fish.audio/v1/tts",
+    "headers": {
+      "Content-Type": "application/msgpack",
+      "Authorization": "Bearer ${apiKey}"
+    },
+    "body": {
+      "text": "${text}",
+      "chunk_length": 200,
+      "format": "mp3",
+      "mp3_bitrate": 128,
+      "normalize": true,
+      "latency": "normal",
+      "references": []
+    }
+  },
+  "response": {
+    "type": "binary"
+  }
+}

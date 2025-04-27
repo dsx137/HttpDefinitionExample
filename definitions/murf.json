@@ -1,0 +1,21 @@
+{
+  "request": {
+    "url": "https://api.murf.ai/v1/speech/generate",
+    "headers": {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+      "api-key": "${apiKey}"
+    },
+    "body": {
+      "text": "${text}",
+      "voiceId": "en-US-terrell",
+      "format": "MP3",
+      "channelType": "MONO",
+      "sampleRate": 44100
+    }
+  },
+  "response": {
+    "type": "json",
+    "audioField": "audioFile"
+  }
+}
